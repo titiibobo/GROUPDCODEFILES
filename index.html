@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>XYZ Airline Flight Schedule Portal</title>
+  </head>
+  <body>
+    <!-- the div class background-image should contain all the text that will be on top of the image -->
+    <div class="background-image">
+      <div align="center">
+        <h1>
+          WELCOME <br />TO <br />
+          XYZ FLIGHT CHECKING SYSTEM
+        </h1>
+      </div>
+
+      <br />
+
+      <div align="center">
+        <h4><u>Use the button below to enter your details</u></h4>
+      </div>
+
+      <br />
+
+      <!-- to align to buttons together class below <div -->
+      <div class="twobuttons">
+        <a href="register.php">
+          <button
+            type="submit"
+            class="btn btn-custom"
+            style="background-color: #060; font-weight: bold; color: #fff"
+          >
+            Register
+          </button></a
+        >
+        <!-- to link to another page -->
+        <a href="login.php">
+          <!--to link to another page ends here  -->
+          <button
+            type="submit"
+            class="btn btn-custom"
+            style="background-color: #060; font-weight: bold; color: #fff"
+          >
+            login
+          </button></a
+        >
+      </div>
+      <!-- to align to buttons together class end above </div> -->
+      <!-- div class background-image closed below </div>-->
+    </div>
+  </body>
+
+  <!-- styling begins -->
+  <style>
+    /* style the background image to take the full screen */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .background-image {
+      background-image: url("airplane.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+    /* style the background image to take the full screen ends*/
+
+    /* to align two buttons together */
+    .twobuttons {
+      text-align: left;
+      /* to put them side by side use inline-block */
+      display: inline-block;
+      position: static;
+      top: 30%;
+      left: 50%;
+      padding-left: 700px;
+    }
+    /* to create shadow effect */
+    h1 {
+      text-shadow: 2px 2px gray;
+    }
+  </style>
+
+  <!-- styling ends -->
+</html>
